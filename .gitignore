@@ -1,0 +1,8 @@
+# Found some standard Jekyll ignore lines
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignore IDE
+nbproject/
