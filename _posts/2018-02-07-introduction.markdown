@@ -18,9 +18,8 @@ There are a number of solutions on the web for people who wish for a form to be 
 for them, but this is to my knowledge the only service that will build and deploy it
 on a site owner's own service.
 
-Presently SMTP and Sendmail servers are supported, and other mail transport options
-are planned for the future.
+Both SMTP and Sendmail servers are supported.
 
 The interface for Missive is arranged into different tabs, and does not require
 registration to be viewed. This allows prospective users more information about
-the features offered before they sign up.
+the features offered before signing up.
