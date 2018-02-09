@@ -4,6 +4,13 @@ title: "Product roadmap"
 date:   2018-02-09 11:15:01 +0000
 ---
 
+The roadmap is a list of improvements for the Missive system. It is split into
+"current" and "future", where current improvements are more likely to be implemented
+(though still not guaranteed).
+
+If you see an idea and agree with it, feel free to let me know in the support channel.
+Similarly, get in touch if you have your own suggestion.
+
 ## Current roadmap
 
 The current roadmap comprises of features that are planned for inclusion in a future
@@ -17,10 +24,11 @@ release of the Missive system.
 
 ### Local system
 
-* HTML editor
+* HTML editor (only text emails are supported currently)
 * Required/optional field validation
 * Type field validation
-* Support for multiple forms per Missive account (would be useful for web agencies)
+* Support for multiple forms per Missive account (would be useful for web agencies or
+other folks who administrate a non-trivial number of forms)
 * Upgrade button (saves having to remove and re-deploy)
 * Password strength meter for improved account security
 
