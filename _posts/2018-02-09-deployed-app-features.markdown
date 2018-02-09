@@ -10,6 +10,7 @@ for technical readers interested to know if it is suitable for their intended pu
 * All the code you need to run a form-to-email on your own LAMP server
 * Installs under remote control from the [Missive app](https://missive-test.jondh.me.uk/)
 * Supports SMTP and Sendmail mail transfer
+* SMTP sending includes support for standard SMTP and TLS or SSL encryption
 * Messages are sent in an AJAX operation (may be helpful for Single Page Applications)
 * All sections of the form can be overridden with custom HTML
 * Optional rate-limiter to reduce third-party abuse

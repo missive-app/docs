@@ -18,7 +18,8 @@ There are a number of solutions on the web for people who wish for a form to be 
 for them, but this is to my knowledge the only service that will build and deploy it
 on a site owner's own server.
 
-Both SMTP and Sendmail mail sending protocols are supported.
+Both SMTP and Sendmail mail sending protocols are supported. Software deployments can
+be done via FTP or SFTP.
 
 The interface for Missive is arranged into different tabs, and does not require
 registration to be viewed. This allows prospective users more information about
