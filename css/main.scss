@@ -70,3 +70,10 @@ footer.site-footer {
     border: 1px solid grey;
     padding: 4px 8px;
 }
+
+/* Two-column blog list */
+.post-list > li {
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+}
