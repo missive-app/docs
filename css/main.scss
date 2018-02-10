@@ -59,3 +59,14 @@ $on-laptop:        800px;
 footer.site-footer {
     padding: 10px;
 }
+
+.post-content table {
+    border-collapse: collapse;
+    margin-bottom: 12px;
+}
+
+.post-content table th,
+.post-content table td {
+    border: 1px solid grey;
+    padding: 4px 8px;
+}
