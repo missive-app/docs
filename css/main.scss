@@ -74,8 +74,9 @@ footer.site-footer {
 /* Two-column blog list */
 .post-list > li {
     float: left;
-    width: 50%;
+    width: 47%;
     margin-bottom: 12px;
+    padding: 0 4px;
 }
 
 .post-list > li:nth-child(odd) {
