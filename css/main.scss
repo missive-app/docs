@@ -77,3 +77,7 @@ footer.site-footer {
     width: 50%;
     margin-bottom: 12px;
 }
+
+.post-list > li:nth-child(odd) {
+    clear: left;
+}
