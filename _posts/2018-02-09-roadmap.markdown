@@ -22,7 +22,10 @@ release of the Missive system.
 
 ### Remote deployments
 
+* Support [CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet)
+tokens
 * Image-based CAPTCHA device
+* Labels for form elements
 * Double opt-in addition to a MailChimp subscriber list
 * Support for XOAuth2 mail server authentication (e.g. for GMail)
 
@@ -51,6 +54,9 @@ better done in JavaScript anyway, e.g. in a Single Page Application)
 * Send messages to a [Slack](https://api.slack.com/) chat
 * Configurable rate-limiting
 * Integrate [Google reCAPTCHA](https://www.google.com/recaptcha/intro/index.html)
+* Support for multiple Missive forms on the same page (currently there's some
+clashing HTML `id`s - this can be fixed by some trivial customisations, but it would
+be nice to have it working out-of-the-box)
 
 ### Local system
 
