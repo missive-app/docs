@@ -25,26 +25,28 @@ and whether it satisfies some required and optional modules:
 
 It returns its data in a document like this:
 
-    {
-      "ok": true,
-      "modules": {
-        "required": {
-          "zip": true,
-          "ctype": true,
-          "openssl": true,
-          "php": true
-        },
-        "optional": {
-          "escapeshellcmd": false,
-          "popen": false
-        },
-        "info": {
-          "php_version": "7.1.11",
-          "proceed": true,
-          "warning_code": "no_sendmail"
-        }
-      }
+{% highlight json %}
+{
+  "ok": true,
+  "modules": {
+    "required": {
+      "zip": true,
+      "ctype": true,
+      "openssl": true,
+      "php": true
+    },
+    "optional": {
+      "escapeshellcmd": false,
+      "popen": false
+    },
+    "info": {
+      "php_version": "7.1.11",
+      "proceed": true,
+      "warning_code": "no_sendmail"
     }
+  }
+}
+{% endhighlight %}
 
 The optional modules are needed for users who prefer Sendmail over SMTP. In the
 example above, both of the optional modules are not satisfied by the web server, 

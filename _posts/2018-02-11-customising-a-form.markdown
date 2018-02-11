@@ -12,59 +12,61 @@ HTML as required. This documentation will show how to do that.
 Here is a form example, inside a simple HTML document. This is included
 in the deployed application as `index.php`:
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Demo of form-to-email system</title>
-            <script
-                src="https://code.jquery.com/jquery-3.2.1.min.js"
-                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                crossorigin="anonymous"></script>
-            <script type="text/javascript" src="form/js/scripts.js"></script>
-            <script type="text/javascript" src="form/js/messages.js"></script>
-            <link href="form/styles/styles.css" rel="stylesheet">
-        </head>
-        <body>
-            <div id="missive-container">
+{% highlight php %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo of form-to-email system</title>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="form/js/scripts.js"></script>
+        <script type="text/javascript" src="form/js/messages.js"></script>
+        <link href="form/styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="missive-container">
 
-                <div id="missive-message-holder"></div>
+            <div id="missive-message-holder"></div>
 
-                <form id="missive-email-form">
-                    <div class="missive-form-section">
-                        Email:
-                        <input
-                            type="email"
-                            name="user_email"
-                            value=""
-                            placeholder="email@example.com">
-                    </div>
-                    <div class="missive-form-section">
-                        Title:
-                        <input
-                            type="text"
-                            name="user_title"
-                            value=""
-                            placeholder="Title">
-                    </div>
-                    <div class="missive-form-section">
-                        Full name:
-                        <input
-                            type="text"
-                            name="user_full_name"
-                            value=""
-                            placeholder="Full name">
-                    </div>
-                    <div>
-                        <input
-                            class="missive-send"
-                            type="submit"
-                            value="Send">
-                        <span><img class="missive-spinner" src="spinner.gif"></span>
-                    </div>
-                </form>
-            </div>
-        </body>
-    </html>
+            <form id="missive-email-form">
+                <div class="missive-form-section">
+                    Email:
+                    <input
+                        type="email"
+                        name="user_email"
+                        value=""
+                        placeholder="email@example.com">
+                </div>
+                <div class="missive-form-section">
+                    Title:
+                    <input
+                        type="text"
+                        name="user_title"
+                        value=""
+                        placeholder="Title">
+                </div>
+                <div class="missive-form-section">
+                    Full name:
+                    <input
+                        type="text"
+                        name="user_full_name"
+                        value=""
+                        placeholder="Full name">
+                </div>
+                <div>
+                    <input
+                        class="missive-send"
+                        type="submit"
+                        value="Send">
+                    <span><img class="missive-spinner" src="spinner.gif"></span>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+{% endhighlight %}
 
 This page contains a number of features:
 
@@ -133,22 +135,28 @@ Where any Missive code is called, it needs its libraries to be loaded. The follo
 code will do that, and this can be added in the PHP page itself, or in whatever
 bootstrap file that is available:
 
-    <?php
-    $root = __DIR__;
-    require_once $root . '/vendor/autoload.php';
-    require_once $root . '/form/utility-funcs.php';
-    ?>
+{% highlight php %}
+<?php
+$root = __DIR__;
+require_once $root . '/vendor/autoload.php';
+require_once $root . '/form/utility-funcs.php';
+?>
+{% endhighlight %}
 
 Of course, the root directory may need adjustment.
 
 Next, the assets need to be loaded, which is usually done in the `<head>` of the
 page in question:
 
-    <?php renderTemplate('assets.php') ?>
+{% highlight php %}
+<?php renderTemplate('assets.php') ?>
+{% endhighlight %}
 
 Finally, in the appropriate place in the body, the developer can add this tag:
 
-    <?php renderTemplate('container.php') ?>
+{% highlight php %}
+<?php renderTemplate('container.php') ?>
+{% endhighlight %}
 
 Of course, for any pre-defined section, the developer can choose to add the
 appropriate code into their solution without using the rendering helper. For
