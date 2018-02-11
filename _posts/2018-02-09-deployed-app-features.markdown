@@ -17,4 +17,4 @@ for technical readers interested to know if it is suitable for their intended pu
 * Plenty of CSS classes/ids to which custom CSS can be attached
 
 This list will be kept up-to-date as items in the
-[Roadmap](http://localhost:4000/2018/02/09/roadmap.html) are implemented.
+[Roadmap]({% link _posts/2018-02-09-roadmap.markdown %}) are implemented.
