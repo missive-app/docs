@@ -61,3 +61,4 @@ be nice to have it working out-of-the-box)
 ### Local system
 
 * Scheduled automated tests for critical forms
+* Pre-defined mail settings for popular hosts
