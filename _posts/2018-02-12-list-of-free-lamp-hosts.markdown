@@ -22,8 +22,8 @@ to upgrade!
 
 ## Criteria
 
-* Web server connection - ideally hosts will support SFTP, which is an encrypted
-protocol. The older protocol of FTP does not support encryption, but most free hosts
+* Web server connection - ideally hosts will support SFTP or FTPS, which are encrypted
+protocols. The older protocol of FTP does not support encryption, but most free hosts
 only offer this. It really should be removed from the internet entirely, but we are
 where we are!
 * Sendmail - a local mail transport system that is easy to use. It does not require
@@ -46,7 +46,7 @@ failing that, one from the host.
 
 ### [000webhost.com](https://www.000webhost.com/)
 
-| Web server connection | FTP only |
+| Web server connection | FTPS, FTP |
 | Sendmail | Paid option |
 | Host SMTP | Paid option |
 | External SMTP allowed | Yes |
@@ -61,18 +61,17 @@ more than one would expect from any hosting company. Perfectly recommended.
 
 ### [freehostia.com](https://www.freehostia.com/)
 
-| Web server connection | FTP only for now |
+| Web server connection | FTPS, FTP |
 | Sendmail | Paid option |
 | Host SMTP | Paid option |
 | External SMTP allowed | No |
 
 This host looks very promising, and the control panel is extensive, if rather busy for
 beginners. Free users will need to configure their own domain, which is not trivial
-on any host. SFTP connections are supported from an FTP client, so Missive needs a
-tweak to get this working.
+on any host.
 
-Unfortunately the lack of external SMTP means that no form-to-email solution will
-work unless one upgrades.
+Unfortunately the lack of external SMTP connectivity means that no form-to-email
+solution will work unless one upgrades.
 
 ## Not yet tested
 
