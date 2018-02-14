@@ -18,7 +18,8 @@ details.
 
 Of course, these folks only stay in business if a proportion of their userbase upgrade
 to paid facilities, so if you like a host here and need more features, don't be afraid
-to upgrade. Paid services are also more likely to be of better quality.
+to upgrade. Paid services are also more likely to be of better quality - a number of
+hosts I tried were way more trouble than they were worth.
 
 ## Criteria
 
@@ -106,5 +107,6 @@ where the first host test script is deployed.
 ### [heliohost.org](https://www.heliohost.org/)
 
 This service is volunteer run and looks pretty good on the surface, including full
-cPanel provision. However I've had some difficulties with immediately locked accounts
-and periods of server downtime. I'll come back to this one to give it another go.
+cPanel provision. However I've had some difficulties with accounts locking on a
+very sensitive wrong-password trigger, as well as periods of server downtime. I'll
+come back to this one to give it another go.
