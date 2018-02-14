@@ -18,7 +18,7 @@ details.
 
 Of course, these folks only stay in business if a proportion of their userbase upgrade
 to paid facilities, so if you like a host here and need more features, don't be afraid
-to upgrade!
+to upgrade. Paid services are also more likely to be of better quality.
 
 ## Criteria
 
@@ -73,6 +73,38 @@ on any host.
 Unfortunately the lack of external SMTP connectivity means that no form-to-email
 solution will work unless one upgrades.
 
-## Not yet tested
+### [byet.host](http://byet.host/)
 
-* [Byet Internet Services](https://byet.host/)
+| Web server connection | FTP |
+| Sendmail | ? |
+| Host SMTP | ? |
+| External SMTP allowed | ? |
+
+Nope, nope, nope. The host sets their own cookies and inject this JavaScript:
+
+{% highlight html %}
+<html><body><script type="text/javascript" src="/aes.js" ></script><script>function
+toNumbers(d){var e=[];d.replace(/(..)/g,function(d){e.push(parseInt(d,16))});return e}
+function toHex(){for(var d=[],d=1==arguments.length&&arguments[0].constructor==Array?
+arguments[0]:arguments,e="",f=0;f<d.length;f++)e+=(16>d[f]?"0":"")+d[f].toString(16);
+return e.toLowerCase()}var a=toNumbers("f655ba9d09a112d4968c63579db590b4"),b=
+toNumbers("98344c2eee86c3994890592585b49f80"),c=toNumbers(
+"a9c4a3be9b84420c1cf732936c18da0d");document.cookie="__test="+toHex(
+slowAES.decrypt(c,2,a,b))+"; expires=Thu, 31-Dec-37 23:55:55 GMT; path=/";
+location.href="http://missive-demo.byethost5.com/host_check.php?i=1";</script>
+<noscript>This site requires Javascript to work, please enable Javascript
+in your browser or use a browser with Javascript support</noscript></body>
+</html>
+{% endhighlight %}
+
+Aside from behaving like malware, this corrupts the JSON answers from the various
+scripts deployed by Missive, and so is probably unusable.
+
+I couldn't get any further than the Script Location tab with this host, which is
+where the first host test script is deployed.
+
+### [heliohost.org](https://www.heliohost.org/)
+
+This service is volunteer run and looks pretty good on the surface, including full
+cPanel provision. However I've had some difficulties with immediately locked accounts
+and periods of server downtime. I'll come back to this one to give it another go.
