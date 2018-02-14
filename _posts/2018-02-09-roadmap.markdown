@@ -38,6 +38,7 @@ tokens
 other folks who administrate a non-trivial number of forms)
 * Upgrade button (saves having to remove and re-deploy)
 * Password strength meter for improved account security
+* Allow advanced users to check SSH and FTPS server fingerprints
 
 ## Future roadmap
 
