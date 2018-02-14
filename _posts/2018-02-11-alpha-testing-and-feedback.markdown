@@ -63,6 +63,16 @@ There are a number of broad areas I would like to look at:
 * Features (what do users actually want? See also [the roadmap](/2018/02/09/roadmap.html))
 * Pricing for future add-ons
 
+## What you will need
+
+Since the point of this project is to deploy software onto your own server, you will
+need a web server with an FTP or SSH account. A shell account on a VPS or dedicated
+server is probably fine, as long as you have an web folder and PHP support. cPanel
+accounts are normally ideal as well.
+
+Finally, if you don't have an account to hand,
+[free accounts are available](/2018/02/12/list-of-free-lamp-hosts.html).
+
 ## Feedback forum
 
 Feedback is welcome via any channel you can reach me:
