@@ -63,3 +63,5 @@ be nice to have it working out-of-the-box)
 
 * Scheduled automated tests for critical forms
 * Pre-defined mail settings for popular hosts
+* Button to forget current session (if the user is not logged in, then the only
+way to start again is to delete the browser cookie, which is awkward)
