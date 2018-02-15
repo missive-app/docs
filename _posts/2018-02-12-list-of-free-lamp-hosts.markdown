@@ -69,7 +69,7 @@ am happy to recommend this host.
 
 This host will probably work, but it's a slog to use. External SMTP is not permitted,
 and I got Sendmail sort-of working, but it did not feel reliable. I think the host's
-own SMTP works -- I will need to do more testing here.
+own SMTP could be coaxed into working -- I will need to do more testing here.
 
 There was a lot of extra set-up required with this host. To use their SMTP servers,
 you'll need to use your own domain or subdomain, which means editing DNS records with
