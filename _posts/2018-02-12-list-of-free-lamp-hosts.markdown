@@ -56,6 +56,22 @@ The free version sleeps for one hour a day, but my experience of this host has b
 pretty good, and has been a useful part of my test toolkit. The online support is
 more than one would expect from any hosting company. Perfectly recommended.
 
+### [awardspace.com](https://www.awardspace.com/)
+
+| Web server connection | FTP |
+| Sendmail | Works occasionally |
+| Host SMTP | More testing required |
+| External SMTP allowed | No |
+
+This host will probably work, but it's a slog to use. External SMTP is not permitted,
+and I got Sendmail sort-of working, but it did not feel reliable. I think the host's
+own SMTP works -- I will need to do more testing here.
+
+There was a lot of extra set-up required with this host. To use their SMTP servers,
+you'll need to use your own domain or subdomain, which means editing DNS records with
+your DNS provider. You then need to add a sub-domain in the web interface, and then
+finally set up an email account for the SMTP.
+
 ---
 
 ## Not presently working
@@ -99,7 +115,9 @@ in your browser or use a browser with Javascript support</noscript></body>
 {% endhighlight %}
 
 Aside from behaving like malware, this corrupts the JSON answers from the various
-scripts deployed by Missive, and so is probably unusable.
+scripts deployed by Missive, and so is probably unusable. I contacted their support
+channel, and they said this is "caused by our anti bot / spam protection that is
+mandatory on free hosting". They say their premium offering does not do this.
 
 I couldn't get any further than the Script Location tab with this host, which is
 where the first host test script is deployed.
