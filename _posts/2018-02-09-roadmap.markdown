@@ -47,8 +47,6 @@ a future release. User feedback to support any of these specifically is welcome.
 
 ### Remote deployments
 
-* SMTP retry (useful for the occasions when SMTP is configured and the email server
-is unavailable at the time of sending)
 * JavaScript rendering of the form (reduces reliance on PHP when rendering may be
 better done in JavaScript anyway, e.g. in a Single Page Application)
 * Send SMS messages from a form
@@ -58,6 +56,10 @@ better done in JavaScript anyway, e.g. in a Single Page Application)
 * Support for multiple Missive forms on the same page (currently there's some
 clashing HTML `id`s - this can be fixed by some trivial customisations, but it would
 be nice to have it working out-of-the-box)
+* SMTP retry (useful for the occasions when SMTP is configured and the email server
+is unavailable at the time of sending)
+* Permit a deployed config file to be downloaded by authorised parties for Missive
+technical support and remote debugging
 
 ### Local system
 
