@@ -53,8 +53,12 @@ failing that, one from the host.
 | External SMTP allowed | Yes |
 
 The free version sleeps for one hour a day, but my experience of this host has been
-pretty good, and has been a useful part of my test toolkit. The online support is
-more than one would expect from any hosting company. Perfectly recommended.
+pretty good, and has been a useful part of my test toolkit. The feature-set is somewhat
+limited, but that makes this host much easier to set up than many others I tried.
+
+The online support is more than one would expect from any hosting company, and they
+even delve into programming problems, which hosts normally don't want to touch. I
+am happy to recommend this host.
 
 ### [awardspace.com](https://www.awardspace.com/)
 
