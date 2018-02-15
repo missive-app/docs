@@ -60,6 +60,9 @@ be nice to have it working out-of-the-box)
 is unavailable at the time of sending)
 * Permit a deployed config file to be downloaded by authorised parties for Missive
 technical support and remote debugging
+* The first host-checking script could try to make contact with an external
+dummy SMTP server maintained by Missive, and if it is unreachable via the usual
+SMTP ports, better recommendations can be made to the user
 
 ### Local system
 
