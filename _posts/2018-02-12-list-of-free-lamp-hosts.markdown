@@ -76,6 +76,12 @@ you'll need to use your own domain or subdomain, which means editing DNS records
 your DNS provider. You then need to add a sub-domain in the web interface, and then
 finally set up an email account for the SMTP.
 
+If SMTP can be made to work here, then it's worth noting it's port 25 only, and so
+is not encrypted. That's not terrible, since it's on the same box as the web server,
+and does not have to travel over the public internet. (Oddly the host's user interface
+suggests that TLS and SSL are available, but those ports were not even open for me
+-- perhaps that is paid accounts only).
+
 ---
 
 ## Not presently working
@@ -128,7 +134,17 @@ where the first host test script is deployed.
 
 ### [heliohost.org](https://www.heliohost.org/)
 
+| Web server connection | SFTP |
+| Sendmail | No, doesn't allow `popen()` |
+| Host SMTP | ? |
+| External SMTP allowed | ? |
+
 This service is volunteer run and looks pretty good on the surface, including full
 cPanel provision. However I've had some difficulties with accounts locking on a
-very sensitive wrong-password trigger, as well as periods of server downtime. I'll
-come back to this one to give it another go.
+very sensitive wrong-password trigger, as well as periods of server downtime. The
+default server for new users, "Johnny", has an uptime of around 90%, and is really
+for testing only.
+
+Presently this service needs file permission adjustments before they will run,
+so I'm regarding it as unsuitable for now. I will happily look again though in
+the future, in case the situation changes.
