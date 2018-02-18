@@ -60,6 +60,10 @@ The online support is more than one would expect from any hosting company, and t
 even delve into programming problems, which hosts normally don't want to touch. I
 am happy to recommend this host.
 
+---
+
+## Not presently working
+
 ### [awardspace.com](https://www.awardspace.com/)
 
 | Web server connection | FTP |
@@ -81,10 +85,6 @@ is not encrypted. That's not terrible, since it's on the same box as the web ser
 and does not have to travel over the public internet. (Oddly the host's user interface
 suggests that TLS and SSL are available, but those ports were not even open for me
 -- perhaps that is paid accounts only).
-
----
-
-## Not presently working
 
 ### [freehostia.com](https://www.freehostia.com/)
 
