@@ -80,11 +80,14 @@ you'll need to use your own domain or subdomain, which means editing DNS records
 your DNS provider. You then need to add a sub-domain in the web interface, and then
 finally set up an email account for the SMTP.
 
-If SMTP can be made to work here, then it's worth noting it's port 25 only, and so
-is not encrypted. That's not terrible, since it's on the same box as the web server,
-and does not have to travel over the public internet. (Oddly the host's user interface
-suggests that TLS and SSL are available, but those ports were not even open for me
--- perhaps that is paid accounts only).
+If SMTP can be made to work here, then it's worth noting it's port 25 only, even
+though the host's user interface says that TLS and SSL are available (the TLS
+and SSL ports refused my connections during testing). The email sending code in
+Missive will try to turn on encryption anyway, but then rejects the server
+certificates, which are self-signed on the server. That may be resolved by turning
+off Auto TLS.
+
+More testing is required with this provider.
 
 ### [freehostia.com](https://www.freehostia.com/)
 
