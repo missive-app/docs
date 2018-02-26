@@ -73,7 +73,7 @@ am happy to recommend this host.
 
 This host will probably work, but it's a slog to use. External SMTP is not permitted,
 and I got Sendmail sort-of working, but it did not feel reliable. I think the host's
-own SMTP could be coaxed into working -- I will need to do more testing here.
+own SMTP could be coaxed into working, but I have had no luck so far.
 
 There was a lot of extra set-up required with this host. To use their SMTP servers,
 you'll need to use your own domain or subdomain, which means editing DNS records with
@@ -86,8 +86,6 @@ and SSL ports refused my connections during testing). The email sending code in
 Missive will try to turn on encryption anyway, but then rejects the server
 certificates, which are self-signed on the server. That may be resolved by turning
 off Auto TLS.
-
-More testing is required with this provider.
 
 ### [freehostia.com](https://www.freehostia.com/)
 
