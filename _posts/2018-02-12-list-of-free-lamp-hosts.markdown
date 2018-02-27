@@ -68,24 +68,23 @@ am happy to recommend this host.
 
 | Web server connection | FTP |
 | Sendmail | Works occasionally |
-| Host SMTP | More testing required |
+| Host SMTP | Paid option |
 | External SMTP allowed | No |
 
-This host will probably work, but it's a slog to use. External SMTP is not permitted,
-and I got Sendmail sort-of working, but it did not feel reliable. I think the host's
-own SMTP could be coaxed into working, but I have had no luck so far.
+The paid options for this host would probably be fine, but the free tier is a slog to
+use. External SMTP is not permitted, and support confirmed for me that their own SMTP
+does not work with free accounts. I got Sendmail sort-of working, but it did not feel
+reliable.
 
 There was a lot of extra set-up required with this host. To use their SMTP servers,
 you'll need to use your own domain or subdomain, which means editing DNS records with
 your DNS provider. You then need to add a sub-domain in the web interface, and then
 finally set up an email account for the SMTP.
 
-If SMTP can be made to work here, then it's worth noting it's port 25 only, even
-though the host's user interface says that TLS and SSL are available (the TLS
-and SSL ports refused my connections during testing). The email sending code in
-Missive will try to turn on encryption anyway, but then rejects the server
-certificates, which are self-signed on the server. That may be resolved by turning
-off Auto TLS.
+When exploring the SMTP options in the free tier, I found that only port 25 was
+open, and the server certificates are unfortunately self-signed, so encryption and
+Auto TLS need to be disabled. However, it is possible the paid accounts have
+a better configuration.
 
 ### [freehostia.com](https://www.freehostia.com/)
 
