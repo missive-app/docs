@@ -22,7 +22,7 @@ for them, but this is to my knowledge the only service that will build and deplo
 on a site owner's own server.
 
 Both SMTP and Sendmail mail sending protocols are supported. Software deployments can
-be done via FTP or SFTP.
+be done via FTPS, FTP or SFTP.
 
 The interface for Missive is arranged into different tabs, and does not require
 registration to be viewed. This allows prospective users more information about

@@ -31,14 +31,16 @@ tokens
 
 ### Local system
 
-* HTML editor (only text emails are supported currently)
+* HTML multi-part emails (only text emails are supported currently)
 * Required/optional field validation
 * Type field validation
 * Support for multiple forms per Missive account (would be useful for web agencies or
 other folks who administrate a non-trivial number of forms)
 * Upgrade button (saves having to remove and re-deploy)
-* Password strength meter for improved account security
+* Report on whether SSL or TLS certificates in a remote SMTP server are self-signed,
+out-dated or valid
 * Allow advanced users to check SSH and FTPS server fingerprints from the wizard
+* Password strength meter for improved account security
 
 ## Future roadmap
 
@@ -66,6 +68,7 @@ SMTP ports, better recommendations can be made to the user
 
 ### Local system
 
+* HTML editor (depends on what workflow email designers tend to use?)
 * Daily automated tests for business-critical forms
 * Pre-defined mail settings for popular hosts
 * Button to forget current session (if the user is not logged in, then the only

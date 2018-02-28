@@ -13,7 +13,7 @@ Web server credentials are required so that the Missive server can make a number
 deployments. A hostname, username and password are required. For security reasons,
 web server passwords are stored temporarily for immediate use, and then thrown away.
 
-Both encrypted (SFTP) and unencrypted (FTP) connections are supported, with encryption
+Both encrypted (SFTP/FTPS) and unencrypted (FTP) connections are supported, with encryption
 being preferred if the server supports it. In general, free hosts tend to only support
 FTP.
 
@@ -52,9 +52,7 @@ The optional modules are needed for users who prefer Sendmail over SMTP. In the
 example above, both of the optional modules are not satisfied by the web server, 
 so the `no_sendmail` flag is also returned.
 
-Presently this script is left on the web server, but it will probably be deleted
-automatically in a future release. Users who like to keep things tidy can safely
-delete this file after deployment without stopping anything working.
+This script self-deletes after it is used, as it is no longer required.
 
 ## Email server credentials
 
@@ -63,8 +61,8 @@ These are in fact required only for SMTP, and if Sendmail is selected, the crede
 can be skipped.
 
 If Sendmail is not available, SMTP is fine - you'll just need to get credentials
-from your web service provider. You can often just use a free email provider like
-GMail or Yahoo as well.
+from your web service provider. You can often just use a [free email provider](/2018/02/26/smtp-providers.html)
+like GMail or Yahoo as well.
 
 In a similar fashion to web server credentials, SMTP credentials are stored just
 temporarily in the Missive system. This means in the unlikely event that
