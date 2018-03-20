@@ -2,6 +2,8 @@
 layout: post
 title:  "Customising a form"
 date:   2018-02-10 18:10:00 +0000
+category: docs
+navigation_weight: 40
 ---
 
 Forms are rendered in sections, so that each section can be overridden by custom

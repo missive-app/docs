@@ -2,6 +2,8 @@
 layout: post
 title: "List of free LAMP hosts"
 date:   2018-02-12 15:41:18:00 +0000
+category: docs
+navigation_weight: 30
 excerpt: >
   If you don't have a LAMP account to hand, and want to give things a low-risk try,
   sign up for one of these (really) free hosts.

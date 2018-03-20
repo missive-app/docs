@@ -2,6 +2,8 @@
 layout: post
 title:  "Technical operation"
 date:   2018-02-10 16:08:00 +0000
+category: docs
+navigation_weight: 50
 ---
 
 This document offers some technical detail about what happens at selected stages of
