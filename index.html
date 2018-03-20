@@ -2,12 +2,13 @@
 layout: default
 ---
 
+{% assign docs = (site.categories.docs | sort: 'navigation_weight') %}
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Documentation</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in docs %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
