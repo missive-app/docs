@@ -62,7 +62,7 @@ There are a number of broad areas I would like to look at:
 
 * Documentation (what do people need?)
 * Support channels (Twitter? Chat widget? Discourse? Slack?)
-* Features (what do users actually want? See also [the roadmap](/2018/02/09/roadmap.html))
+* Features (what do users actually want? See also [the roadmap]({% post_url 2018-02-09-roadmap %}))
 * Pricing for future add-ons
 
 ## What you will need
@@ -73,7 +73,7 @@ server is probably fine, as long as you have an web folder and PHP support. cPan
 accounts are normally ideal as well.
 
 Finally, if you don't have an account to hand,
-[free accounts are available](/2018/02/12/list-of-free-lamp-hosts.html).
+[free accounts are available]({% post_url 2018-02-12-list-of-free-lamp-hosts %}).
 
 ## Feedback forum
 

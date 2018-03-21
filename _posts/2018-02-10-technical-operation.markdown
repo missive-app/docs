@@ -63,7 +63,7 @@ These are in fact required only for SMTP, and if Sendmail is selected, the crede
 can be skipped.
 
 If Sendmail is not available, SMTP is fine - you'll just need to get credentials
-from your web service provider. You can often just use a [free email provider](/2018/02/26/smtp-providers.html)
+from your web service provider. You can often just use a [free email provider]({% post_url 2018-02-26-smtp-providers %})
 like GMail or Yahoo as well.
 
 In a similar fashion to web server credentials, SMTP credentials are stored just

@@ -15,7 +15,7 @@ probably going to be of good quality. Equally, some mail services from smaller w
 hosts will not always be up to scratch, which may be a reason to try connecting to an
 external service.
 
-Note that many [free web hosts](/2018/02/12/list-of-free-lamp-hosts.html) do not permit
+Note that many [free web hosts]({% post_url 2018-02-12-list-of-free-lamp-hosts %}) do not permit
 external SMTP connections, in an effort to make it harder for anonymous customers to
 send spam. Other that 000webhost, all the others I tried blocked the mail ports at their
 firewall. However, if you are on a paid account, you will normally be fine.
@@ -45,7 +45,7 @@ You have to make one additional setting change in GMail, which is thus:
 Even though it sounds slightly alarming, I take the view that this feature is perfectly
 safe to use. Google does offer other authentication systems which do not need this
 switch (particularly OAuth2) - seeing if that can be integrated is on
-[the roadmap](/2018/02/09/roadmap.html).
+[the roadmap]({% post_url 2018-02-09-roadmap %}).
 
 ### Other providers
 
