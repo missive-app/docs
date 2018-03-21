@@ -2,24 +2,23 @@
 layout: default
 ---
 
-{% assign docs = (site.categories.docs | sort: 'navigation_weight') %}
 <div class="home">
 
-  <h1 class="page-heading">Documentation</h1>
-
   <ul class="post-list">
-    {% for post in docs %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="docs.html">Documentation</a>
         </h2>
-        {% if post.excerpt %}
-            {{ post.excerpt }}
-        {% endif %}
+        A user-guide on how to use Missive, and how to deploy and customise
+        your own forms.
       </li>
-    {% endfor %}
+
+      <li>
+        <h2>
+          <a class="post-link" href="blog.html">Blog</a>
+        </h2>
+        A feed of ongoing news and information relating to Missive.
+      </li>
   </ul>
 
 </div>
