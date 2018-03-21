@@ -4,6 +4,7 @@ title: "List of SMTP providers"
 date:   2018-02-26 23:28:54:00 +0000
 category: docs
 navigation_weight: 60
+permalink: /:categories/:title:output_ext
 excerpt: >
   If your host allows external SMTP connections, you might be able to use one of
   these mail hosts.

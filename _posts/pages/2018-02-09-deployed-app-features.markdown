@@ -4,6 +4,7 @@ title:  "Deployed app features"
 date:   2018-02-09 19:01:00 +0000
 category: docs
 navigation_weight: 10
+permalink: /:categories/:title:output_ext
 ---
 
 This article lists the main features of the PHP-based remote app, and may be useful

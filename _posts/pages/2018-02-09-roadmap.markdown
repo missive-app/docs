@@ -4,6 +4,7 @@ title: "Product roadmap"
 date:   2018-02-09 11:15:01 +0000
 category: docs
 navigation_weight: 70
+permalink: /:categories/:title:output_ext
 excerpt: >
   The roadmap is a list of potential improvements for the Missive system, and
   may be useful for readers wanting to know if and when a particular feature

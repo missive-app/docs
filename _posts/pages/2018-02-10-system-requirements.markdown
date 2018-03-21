@@ -4,6 +4,7 @@ title:  "Email app system requirements"
 date:   2018-02-10 18:10:00 +0000
 category: docs
 navigation_weight: 20
+permalink: /:categories/:title:output_ext
 excerpt: >
   Here are the server requirements for the deployable mailer app, including
   minimum PHP version, required extensions and optional extensions.
