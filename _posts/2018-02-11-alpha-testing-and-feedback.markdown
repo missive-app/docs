@@ -2,6 +2,7 @@
 layout: post
 title: "Alpha testing and feedback"
 date:   2018-02-11 17:18:00 +0000
+category: blog
 excerpt: >
   An introduction to folks interested in the alpha version of Missive. It works,
   but there's probably bugs...

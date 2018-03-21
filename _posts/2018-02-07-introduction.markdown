@@ -2,6 +2,7 @@
 layout: post
 title:  "Introduction to Missive"
 date:   2018-02-07 21:36:48 +0000
+category: blog
 excerpt: >
   This introduction gives a simple overview of what the Missive system does,
   and who the intended audience is.
